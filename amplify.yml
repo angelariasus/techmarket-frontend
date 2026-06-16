@@ -10,7 +10,7 @@ frontend:
   artifacts:
     baseDirectory: dist/techmarket-frontend/browser
     files:
-      - '*/'
+      - '**/*'
   cache:
     paths:
       - node_modules/*/
