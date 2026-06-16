@@ -8,9 +8,9 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist/techmarket-frontend/browser
+    baseDirectory: dist/techmarket-frontend
     files:
-      - '*/'
+      - '**/*'
   cache:
     paths:
       - node_modules/*/
