@@ -7,11 +7,8 @@ frontend:
     build:
       commands:
         - npm run build
-        - echo "=== CONTENIDO DIST ===" 
-        - ls -la dist/
-        - ls -la dist/techmarket-frontend/
   artifacts:
-    baseDirectory: dist/techmarket-frontend
+    baseDirectory: dist/techmarket-frontend/browser
     files:
       - '*/'
   cache:
