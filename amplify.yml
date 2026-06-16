@@ -5,7 +5,6 @@ frontend:
       commands:
         - corepack enable
         - corepack prepare pnpm@9.15.0 --activate
-        - pnpm config set store-dir .pnpm-store
         - pnpm install --no-frozen-lockfile --ignore-scripts
     build:
       commands:
