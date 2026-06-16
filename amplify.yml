@@ -3,16 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - corepack enable
-        - corepack prepare pnpm@9.15.0 --activate
-        - pnpm install --no-frozen-lockfile --ignore-scripts
+        - npm ci
     build:
       commands:
-        - pnpm exec ng build --configuration=production
+        - npm run build
   artifacts:
     baseDirectory: dist/techmarket-frontend/browser
     files:
       - '*/'
   cache:
     paths:
-      - .pnpm-store/*/
+      - node_modules/*/
